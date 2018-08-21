@@ -67,7 +67,7 @@ else:
                                                   #FOR LOOP#
 
 
-#Q.1- Take 10 integers from user and print it on screen.
+#Q.6- Take 10 integers from user and print it on screen.
 a=[]
 c=int(input("enter no of int"))
 for i in range(c):
@@ -76,14 +76,14 @@ for i in range(c):
 print(a)
 
     
-#Q.2- Write an infinite loop.An infinite loop never ends. Condition is always true.
+#Q.7- Write an infinite loop.An infinite loop never ends. Condition is always true.
 
 a="hello"
 while (True):
     print(a)
 
 
-#Q.3- Create a list of integer elements by user input. Make a new list which will store square of elements of previous list
+#Q.8- Create a list of integer elements by user input. Make a new list which will store square of elements of previous list
 
 a=[]
 b=[]
@@ -97,7 +97,7 @@ for i in range(c):
     b.append(h)
 print(b)
     
-#Q.4- From a list containing ints, strings and floats, make three lists to store them separately
+#Q.9- From a list containing ints, strings and floats, make three lists to store them separately
 
 a=[]
 m=[]
@@ -115,7 +115,7 @@ print(m)
 print(n)
 
 
-#Q.5- Using range(1,101), make a list containing only prime numbers. 
+#Q.10- Using range(1,101), make a list containing only prime numbers. 
 
 print("Prime numbers between 1 and 101 are:")
 
@@ -127,5 +127,26 @@ for num in range(1,102):
                break
        else:
            print(num)
-    
+'''Q.11- Print the following patterns: 
+* 
+** 
+*** 
+**** '''
+for i in range(0, 4):
+    for j in range(0, i+1):
+        print("* ",end="")
+    print()
 
+#Q.12- Take inputs from user to make a list. Again take one input from user and search it in the list and delete that element, if found. Iterate over list using for loop.
+
+a=[]
+b=[]
+c=int(input("enter no of int"))
+for i in range(c):
+    d=int(input())
+    a.append(d)
+print(a)
+
+e=int(input("enter the num to be seacrched"))
+a.remove(e)
+print(a)
